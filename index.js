@@ -26,8 +26,8 @@ app.use(function (req, res, next) {
     next();
 });
 
-app.listen(PORT, () => {
-    console.log(`App is listening on port ${PORT}`)
+app.post('/', (req, res) => {
+    res.send('Hello WOrld')
 })
 
 app.post('/user/create', (req, res) => {
@@ -131,4 +131,8 @@ app.get('/bank/users', async (req, res) => {
     }
 
     res.json({ users })
+})
+
+app.listen(PORT, () => {
+    console.log(`App is listening on port ${PORT}`)
 })
