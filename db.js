@@ -1,5 +1,5 @@
 const { MongoClient } = require("mongodb");
-const connectionString = '"mongodb+srv://nathan:Hamptonej1!@nathan.igthh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"'
+const connectionString = 'mongodb+srv://nathan:Hamptonej1!@nathan.igthh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 
 let db
 
