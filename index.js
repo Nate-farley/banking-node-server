@@ -39,7 +39,7 @@ app.post('/user/create', (req, res) => {
     try {
         createUser(email, password, name, userRole)
     } catch(error) {
-        res.sendStatus(500)
+        //res.sendStatus(500)
     }
 
     res.sendStatus(200)
@@ -52,7 +52,7 @@ app.post('/user/login', (req, res) => {
     try {
         login(email, password)
     } catch(error) {
-        res.sendStatus(500)
+        //res.sendStatus(500)
     }
 
     res.sendStatus(200)
@@ -64,7 +64,7 @@ app.post('/user/logout', (req, res) => {
     try {
         logout(email)
     } catch(error) {
-        res.sendStatus(500)
+        //res.sendStatus(500)
     }
 
     res.sendStatus(200)
@@ -77,7 +77,7 @@ app.post('/bank/deposit', (req, res) => {
     try {
         deposit(email, depositAmount)
     } catch(error) {
-        res.sendStatus(500)
+        //res.sendStatus(500)
     }
 
     res.sendStatus(200)
@@ -90,7 +90,7 @@ app.post('/bank/withdraw', (req, res) => {
     try {
         withdraw(email, withdrawAmount)
     } catch(error) {
-        res.sendStatus(500)
+        //res.sendStatus(500)
     }
 
     res.sendStatus(200)
@@ -104,7 +104,7 @@ app.post('/bank/transfer', async (req, res) => {
     try {
         await transfer(ownerEmail, recipientEmail, amount)
     } catch(error) {
-        res.sendStatus(500)
+        //res.sendStatus(500)
     }
 
     res.sendStatus(200)
@@ -127,7 +127,7 @@ app.get('/bank/users', async (req, res) => {
     try {
         users = await getUsers()
     } catch(error) {
-        res.sendStatus(500)
+        //res.sendStatus(500)
     }
 
     res.json({ users })
